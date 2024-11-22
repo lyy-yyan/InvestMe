@@ -1,0 +1,105 @@
+/* 样式表 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333; /* 导航栏背景颜色 */
+    padding: 10px 0; /* 上下内边距 */
+}
+
+/* 针对小屏幕设备 */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* 垂直排列 */
+    }
+}
+
+/* 针对中等屏幕设备 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row; /* 水平排列 */
+    }
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+}
+
+.nav-list {
+    list-style: none; /* 去掉列表项默认样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+    display: flex; /* 使用Flexbox布局 */
+}
+
+.nav-item {
+    margin: 0 2%; /* 每个导航项之间的间距 */
+}
+
+.nav-item a {
+    text-decoration: none; /* 去掉下划线 */
+    color: white; /* 文字颜色 */
+    font-size: 150%; /* 字体大小 */
+    padding: 5px 15px; /* 内边距 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+}
+
+.nav-item a:hover {
+    background-color: #575757; /* 悬停时的背景颜色 */
+    border-radius: 2%; /* 圆角边框 */
+}
+
+.background-container {
+    position: relative; /* 相对定位 */
+    width: 100%;
+    height: 100vh; /* 根据需要调整高度 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片覆盖整个容器 */
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    z-index: -1; /* 确保背景图片在最底层 */
+}
+
+.overlay {
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+    z-index: 1; /* 确保遮罩层在背景图片之上 */
+}
+
+.content-container {
+    position: relative; /* 相对定位 */
+    width: 100%;
+    height: 50%;
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    flex-direction: column; /* 垂直排列 */
+    text-align: center; /* 文字居中 */
+    margin-top: 5%;
+    z-index: 2; /* 确保内容在遮罩层之上 */
+}
+
+.avatar {
+    width: 20%; /* 根据需要调整大小 */
+    aspect-ratio: 1 / 1; /* 设置宽高比为1:1 */
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 确保图片覆盖整个容器 */
+}
+
+.greeting {
+    font-size: 200%; /* 标题字体大小 */
+    color: white; /* 标题颜色 */
+}
