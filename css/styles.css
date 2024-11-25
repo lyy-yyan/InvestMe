@@ -100,6 +100,13 @@ header {
 }
 
 .greeting {
-    font-size: 200%; /* 标题字体大小 */
-    color: white; /* 标题颜色 */
+    font-size: 200%; /* 字体大小 */
+    color: white; /* 颜色 */
+    opacity: 0;
+    transition: opacity 2s; /* 设置过渡效果持续2秒 */ 
+}
+
+.motto {
+    font-size: 150%; /* 标题字体大小 */
+    color: yellowgreen; /* 标题颜色 */
 }
