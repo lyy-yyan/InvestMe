@@ -4,4 +4,60 @@ body {
     align-items: center; /* 垂直居中 */
     margin: 0; /* 去除默认的body边距 */
     font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* 背景颜色 */
+}
+
+.title {
+    text-align: center; /* 水平居中 */
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    grid-template-columns: repeat(3, 1fr); /* 2列，每列宽度相等 */
+    grid-template-rows: repeat(2, 50%); /* 2行 */
+    gap: 1%; /* 网格项之间的间距 */
+}
+
+.grid-item {
+    background-color: #ffffff; /* 背景颜色 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列，每列宽度相等 */
+    grid-template-rows: repeat(2, 1fr); /* 2行 */
+    color: white;
+    border: 1px solid #333;
+    margin: 2%; /* 居中 */
+    overflow: hidden; /* 隐藏溢出 */
+}
+
+.grid-item > * {
+    flex: 1; /* 使所有子元素平分可用空间 */
+}
+
+.grid-item img {
+    width: 100%; /* 图片宽度 */
+    height: auto; /* 保持图片比例 */
+    border-radius: 8px; /* 圆角 */
+    flex: 0 0 auto; /* 不拉伸图片 */
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.grid-item h2 {
+    color: black;
+    font-size: 120%; /* 标题大小 */
+    flex: 0 0 auto; /* 不拉伸标题 */
+    padding-left: 40%;
+}
+
+.grid-item p {
+    color: black;
+    font-size: 1em; /* 描述大小 */
+    flex: 1; /* 拉伸描述 */
+    padding-left: 30%;
+    padding-right: 10%;
+    padding-top: 30%;
+    word-wrap: break-word;
 }

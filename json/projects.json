@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Web Design",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user1.jpg"
+    },
+    {
+        "title": "Web Development",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user2.jpg"
+    },
+    {
+        "title": "Branding",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user3.jpg"
+    },
+    {
+        "title": "Mobile Apps",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user4.jpg"
+    },
+    {
+        "title": "Social Media",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user5.jpg"
+    },
+    {
+        "title": "Consulting",
+        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.",
+        "image": "../img/user6.jpg"
+    }
+]
