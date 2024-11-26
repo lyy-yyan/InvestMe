@@ -1,0 +1,7 @@
+/* 样式表 */
+body {
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin: 0; /* 去除默认的body边距 */
+    font-family: 'Roboto', sans-serif;
+}

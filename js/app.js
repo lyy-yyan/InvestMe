@@ -42,11 +42,4 @@ const textElement = document.getElementById('greeting');
 fadeIn(textElement); // 调用fadeIn函数使文字淡入
 setTimeout(() => fadeOut(textElement), 5000); // 5秒后调用fadeOut函数使文字淡出
 
-/* 视频播放 */
-document.getElementById('playButton').addEventListener('click', function() {
-    var video = document.getElementById('myVideo');
-    document.getElementById('myVideo').textContent = '播放视频';
-    video.style.display = 'block'; // 显示视频
-    video.play(); // 播放视频
-});
   
